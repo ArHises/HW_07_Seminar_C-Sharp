@@ -37,7 +37,7 @@ void PrintTable(int[,] table)
 }
 void AverageOfColon(int[,] table)
 {
-    int sum = 0;
+    double sum = 0;
     for (int i = 0; i < table.GetLength(1); i++)
     {
         sum = 0;
@@ -45,7 +45,7 @@ void AverageOfColon(int[,] table)
         {
             sum += table[j,i];
         }
-        Console.WriteLine($"Average of colon {i + 1} = " + Convert.ToDouble(sum) / table.GetLength(1));
+        Console.WriteLine($"Average of colon {i + 1} = " + sum / table.GetLength(1));
     }
 }
 int[,] table = CreateIntTable();
